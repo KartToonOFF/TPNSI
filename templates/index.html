@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trophée NSI</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Recherche d'Œuvres d'Art</h1>
+    </header>
+    <main>
+        <div class="dragDrop">Déposez une image ici</div>
+
+        <form class="uploadForm" enctype="multipart/form-data">
+            <label for="image">Téléchargez une image :</label>
+            <input type="file" class="image" name="image" accept="image/*" required>
+            <br>
+            <button type="submit">Rechercher</button>
+        </form>
+        <div class="results"></div>
+    </main>
+    <footer></footer>
+</body>
+</html>
